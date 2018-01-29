@@ -92,7 +92,7 @@ namespace MineManager {
 		}
 
 		void MinimiseWindow() {
-			Process[] processes = Process.GetProcessesByName(Config.GetValue("minerProcess").ToString());
+			Process[] processes = Process.GetProcessesByName(Config.GetValue("windowProcess").ToString());
 
 			foreach (Process p in processes) {
 				IntPtr windowHandle = p.MainWindowHandle;

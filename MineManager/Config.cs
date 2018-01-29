@@ -14,7 +14,8 @@ namespace MineManager {
 			configFile = Path.Combine(appDataPath, "config.txt");
 			if (!File.Exists(configFile)) {
 				config["batFile"] = "1";
-				config["minerProcess"] = "miner.exe";
+				config["minerProcess"] = "miner";
+				config["windowProcess"] = "cmd";
 				Save();
 			}
 			String[] configLines = File.ReadAllLines(configFile);

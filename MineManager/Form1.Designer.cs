@@ -34,6 +34,8 @@
 			this.startMinerButton = new System.Windows.Forms.Button();
 			this.killMinerButton = new System.Windows.Forms.Button();
 			this.runAtBootCheckbox = new System.Windows.Forms.CheckBox();
+			this.label3 = new System.Windows.Forms.Label();
+			this.windowProcessTextBox = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// batFileTextBox
@@ -68,7 +70,7 @@
 			// 
 			// saveConfigButton
 			// 
-			this.saveConfigButton.Location = new System.Drawing.Point(12, 136);
+			this.saveConfigButton.Location = new System.Drawing.Point(12, 188);
 			this.saveConfigButton.Name = "saveConfigButton";
 			this.saveConfigButton.Size = new System.Drawing.Size(75, 23);
 			this.saveConfigButton.TabIndex = 3;
@@ -94,7 +96,7 @@
 			// 
 			// startMinerButton
 			// 
-			this.startMinerButton.Location = new System.Drawing.Point(12, 166);
+			this.startMinerButton.Location = new System.Drawing.Point(12, 218);
 			this.startMinerButton.Name = "startMinerButton";
 			this.startMinerButton.Size = new System.Drawing.Size(75, 23);
 			this.startMinerButton.TabIndex = 6;
@@ -104,7 +106,7 @@
 			// 
 			// killMinerButton
 			// 
-			this.killMinerButton.Location = new System.Drawing.Point(93, 166);
+			this.killMinerButton.Location = new System.Drawing.Point(93, 218);
 			this.killMinerButton.Name = "killMinerButton";
 			this.killMinerButton.Size = new System.Drawing.Size(75, 23);
 			this.killMinerButton.TabIndex = 7;
@@ -115,18 +117,36 @@
 			// runAtBootCheckbox
 			// 
 			this.runAtBootCheckbox.AutoSize = true;
-			this.runAtBootCheckbox.Location = new System.Drawing.Point(12, 107);
+			this.runAtBootCheckbox.Location = new System.Drawing.Point(12, 159);
 			this.runAtBootCheckbox.Name = "runAtBootCheckbox";
 			this.runAtBootCheckbox.Size = new System.Drawing.Size(147, 17);
 			this.runAtBootCheckbox.TabIndex = 9;
 			this.runAtBootCheckbox.Text = "Run when windows starts";
 			this.runAtBootCheckbox.UseVisualStyleBackColor = true;
 			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(13, 113);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(150, 13);
+			this.label3.TabIndex = 10;
+			this.label3.Text = "Miner Window Process Name:";
+			// 
+			// windowProcessTextBox
+			// 
+			this.windowProcessTextBox.Location = new System.Drawing.Point(13, 130);
+			this.windowProcessTextBox.Name = "windowProcessTextBox";
+			this.windowProcessTextBox.Size = new System.Drawing.Size(258, 20);
+			this.windowProcessTextBox.TabIndex = 11;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 258);
+			this.Controls.Add(this.windowProcessTextBox);
+			this.Controls.Add(this.label3);
 			this.Controls.Add(this.runAtBootCheckbox);
 			this.Controls.Add(this.killMinerButton);
 			this.Controls.Add(this.startMinerButton);
@@ -157,6 +177,8 @@
 		private System.Windows.Forms.Button startMinerButton;
 		private System.Windows.Forms.Button killMinerButton;
 		private System.Windows.Forms.CheckBox runAtBootCheckbox;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.TextBox windowProcessTextBox;
 	}
 }
 

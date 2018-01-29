@@ -19,6 +19,7 @@ namespace MineManager {
 		public void LoadConfig() {
 			batFileTextBox.Text = Config.GetValue("batFile").ToString();
 			processNameTextBox.Text = Config.GetValue("minerProcess").ToString();
+			windowProcessTextBox.Text = Config.GetValue("windowProcess").ToString();
 			rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
 			if (rkApp.GetValue("MineManager") != null)
 				runAtBootCheckbox.Checked = true;
@@ -37,6 +38,7 @@ namespace MineManager {
 		private void saveConfigButton_Click(object sender, EventArgs e) {
 			Config.SetValue("batFile", batFileTextBox.Text);
 			Config.SetValue("minerProcess", processNameTextBox.Text);
+			Config.SetValue("windowProcess", windowProcessTextBox.Text);
 			Config.Save();
 			rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
 			if (runAtBootCheckbox.Checked && rkApp.GetValue("Folder Locker") == null) {
